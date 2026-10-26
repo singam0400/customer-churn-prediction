@@ -1,0 +1,24 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.env
+*.log
+
+# Gradio local state
+.gradio/
+
+# Local MLflow tracking data
+mlruns/
+mlflow.db
+mlflow.db-shm
+mlflow.db-wal
+
+# Generated artifacts, except the deployable model
+artifacts/*
+!artifacts/.gitkeep
+!artifacts/churn_pipeline.joblib
+
+# Notebook checkpoints
+.ipynb_checkpoints/
